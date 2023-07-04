@@ -1,0 +1,5 @@
+import numpy as np
+I=5
+Q=25
+t=np.divide(Q,I)
+print("The time period is",t,"secs")

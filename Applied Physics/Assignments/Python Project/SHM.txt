@@ -1,0 +1,103 @@
+import numpy as np
+import matplotlib.pyplot as plt
+xm = 12
+w = 22
+phase = 0
+t= np.arange(0,20, 0.1)
+x = xm*np.cos(np.radians(w*t- phase))
+# plt.plot(t,x)
+xm = 12
+w = 22
+phase = 0
+t = np.arange(0,20,0.1)
+x = xm*np.cos(np.radians(w*t-phase))
+
+phase1 = 45
+x1 = xm*np.cos(np.radians(w*t-phase1))
+
+phase2 = 90
+x2 = xm*np.cos(np.radians(w*t-phase2))
+
+phase3 = 180
+x3 = xm*np.cos(np.radians(w*t-phase3))
+
+# ax = plt.subplot(111)
+# ax.plot(t,x, label = 'Phase = 0')
+# ax.plot(t,x1, label = 'Phase = 45')
+# ax.plot(t,x2, label = 'Phase = 90')
+# ax.plot(t,x3, label = 'Phase = 180')
+# plt.title('SHM Displacement for different phase')
+# ax.legend()
+# plt.show()
+
+xm = 1
+w = 10
+vm = 2
+am = 3
+phase = 90
+t = np.arange(0,40,0.1)
+x = xm*np.cos(np.radians(w*t-phase))
+v = - vm*np.sin(np.radians(w*t-phase))
+a = - am*np.cos(np.radians(w*t-phase))
+
+#vm = xm*w
+#am = xm*w**2
+
+# ax = plt.subplot(111)
+# ax.plot(t,x, label = 'Displacement')
+# ax.plot(t,v, label = 'Velocity')
+# ax.plot(t,a, label = 'Acceleration')
+
+# plt.title('SHM Displacement for different phase')
+# ax.legend()
+plt.show()
+
+xm = 1
+w = 1
+phase = 0
+t = np.arange(0,10,0.1)
+x1 = xm*(np.cos((w*t)- phase))
+phase1 = np.pi/2
+x2 = xm*(np.cos((w*t)- phase1))
+#print (x2)
+
+ax = plt.subplot(111)
+ax.plot(t,x1, label = 'Phase 0')
+ax.plot(t,x2, label = 'Phase 90')
+
+plt.title('Simple Harmonic Motion Displacement')
+ax.legend()
+plt.show()
+
+vm = 1
+w = 1
+phase = 0
+t = np.arange(0,10,0.1)
+v1 = - vm*(np.sin((w*t)-phase))
+phase1 = np.pi/2
+v2 = - vm*(np.sin((w*t)-phase1))
+
+ax = plt.subplot(111)
+ax.plot(t,v1, label = 'Phase 0')
+ax.plot(t,v2, label = 'Phase 90')
+
+plt.title('Simple Harmonic Motion Velocity')
+ax.legend()
+plt.show()
+
+am = 1
+w = 1
+phase = 0
+t = np.arange(0,10,0.1)
+a1 = - am*(np.cos((w*t)- phase))
+phase1 = np.pi/2
+a2 = - am*(np.cos((w*t)- phase1))
+#print (x2)
+
+ax = plt.subplot(111)
+ax.plot(t,a1, label = 'Phase 0')
+ax.plot(t,a2, label = 'Phase 90')
+
+plt.title('Simple Harmonic Motion Acceleration')
+ax.legend()
+plt.show()

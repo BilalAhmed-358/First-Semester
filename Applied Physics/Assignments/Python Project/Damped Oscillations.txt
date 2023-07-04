@@ -1,0 +1,4 @@
+omega = np.linspace(0,20,500)
+plt.plot(omega, np.sin(W*2*np.pi), 'purple')
+plt.plot(omega, -np.sin(W*1.1*2*np.pi), 'orange')
+plt.plot(omega, np.sin(W*2*np.pi) - np.sin(W*1.1*2*np.pi), 'teal')
