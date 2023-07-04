@@ -1,0 +1,36 @@
+void Input_data(struct Employee *ptr)
+{
+    printf("\nEnter the data for the employees\n");
+    for (i = 0; i < 5; i++)
+    {
+        printf("\nEnter the Employee id of employee %d\n", i + 1);
+        fflush(stdin);
+        scanf("%d", &(ptr + i)->Emp_id);
+
+        printf("Enter the Employee name of employee %d\n", i + 1);
+        fflush(stdin);
+        gets((ptr + i)->Emp_name);
+
+        printf("Enter the Employee salary of employee %d\n", i + 1);
+        fflush(stdin);
+        scanf("%d", &(ptr + i)->salary);
+
+        printf("Enter the Employee age of employee %d\n", i + 1);
+        fflush(stdin);
+        scanf("%d", &(ptr + i)->age);
+
+        printf("Enter the Employee depart id of employee %d\n", i + 1);
+        fflush(stdin);
+        scanf("%c", &(ptr + i)->depart.depart_id);
+
+        printf("Enter the Employee depart name of employee %d\n", i + 1);
+        fflush(stdin);
+        gets((ptr + i)->depart.depart_name);
+
+        FILE *fp;
+        fp = fopen("K200183.txt", "a");
+        fwrite((ptr + i), sizeof(struct Employee), 1, fp);
+        fclose(fp);
+    }
+    printf("Data entered successfully\n");
+}

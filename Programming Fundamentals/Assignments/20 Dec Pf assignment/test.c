@@ -1,0 +1,294 @@
+#include <stdio.h>
+// Question 02
+
+// int main()
+// {
+// 	char message[100], ch;
+// 	int i, key;
+
+// 	printf("Enter a message to encrypt: ");
+// 	gets(message);
+// 	printf("Enter key: ");
+// 	scanf("%d", &key);
+
+// 	for(i = 0; message[i] != '\0'; ++i){
+// 		ch = message[i];
+
+// 		if(ch >= 'a' && ch <= 'z'){
+// 			ch = ch + key;
+
+// 			if(ch > 'z'){
+// 				ch = ch - 'z' + 'a' - 1;
+// 			}
+
+// 			message[i] = ch;
+// 		}
+// 		else if(ch >= 'A' && ch <= 'Z'){
+// 			ch = ch + key;
+
+// 			if(ch > 'Z'){
+// 				ch = ch - 'Z' + 'A' - 1;
+// 			}
+
+// 			message[i] = ch;
+// 		}
+// 	}
+
+// 	printf("Encrypted message: %s", message);
+
+// 	return 0;
+// }
+//Question 01
+// int main()
+// {
+// 	int i,n=1254,a;
+// 	for ( ; n>0; )
+// 	{
+// 		a=n%10;
+// 		printf("%d\n",a);
+// 		n=n/10;
+// 	}
+// 	printf("%d",-17%7);
+
+// }
+// #include<stdio.h>
+// #include<string.h>
+// struct student
+// {
+// 	char name[50];
+// 	int rollno;
+// 	int age;
+// 	char address[200];
+// };
+// void printnames(struct student std[],int n)
+// {
+// 	int i;
+// 	for(i=0;i<n;i++)
+// 	{
+// 		if(std[i].age==14)
+// 		{
+// 		printf("%s\n",std[i].name);
+// 	    }
+// 	}
+// }
+
+// int main()
+// {
+// 	int i,n;
+// 	printf("how many entries do you want to do\n");
+// 	scanf("%d",&n);
+// 	struct student std[n];
+// 	for(i=0;i<n;i++)
+// 	{
+// 	printf("enter the names of the student.no %d\n",i+1);
+// 	fflush(stdin);
+// 	scanf("%s",&std[i].name);
+// 	printf("enter the roll no of the student.no %d\n",i+1);
+// 	scanf("%d",&std[i].rollno);
+// 	printf("enter the age of the student.no %d\n",i+1);
+// 	scanf("%d",&std[i].age);
+// 	printf("enter the address of the student.no %d\n",i+1);
+// 	fflush(stdin);
+// 	scanf("%s",&std[i].address);
+// 	printf("\n");
+//     }
+//     printnames(std,n);
+
+// }
+// #include<stdio.h>
+// #include<string.h>
+// struct student
+// {
+// 	char name[20];
+// 	int rollno;
+// 	int age;
+// 	char address[2000];
+// };
+// void printnames(struct student std[],int n)
+// {
+// 	int i;
+// 	for(i=0;i<n;i++)
+// 	{
+// 		if(std[i].age==14)
+// 		{
+// 		printf("%s",std[i].name);
+// 	    }
+// 	}
+// }
+
+// int main()
+// {
+// 	int i,n;
+// 	printf("how many entries do you want to do\n");
+// 	scanf("%d",&n);
+// 	struct student std[n];
+// 	for(i=0;i<n;i++)
+// 	{
+// 	printf("enter the names of the student.no %d\n",i+1);
+// 	scanf("%s",&std[i].name);
+// 	printf("enter the roll no of the student.no %d\n",i+1);
+// 	scanf("%d",&std[i].rollno);
+// 	printf("enter the age of the student.no %d\n",i+1);
+// 	scanf("%d",&std[i].age);
+// 	printf("enter the address of the student.no %d\n",i+1);
+// 	scanf("%s",&std[i].address);
+// 	printf("\n");
+//     }
+//     printnames(std,n);
+// }
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char square[10] = {'o', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+
+int checkwin();
+void board();
+
+int main()
+{
+    int player = 1, i, choice;
+
+    char mark, result[10];
+    do
+    {
+        board();
+        player = (player % 2) ? 1 : 2;
+
+        printf("Player %d, enter a number:  ", player);
+        scanf("%d", &choice);
+
+        mark = (player == 1) ? 'X' : 'O';
+
+        if (choice == 1 && square[1] == '1')
+            square[1] = mark;
+
+        else if (choice == 2 && square[2] == '2')
+            square[2] = mark;
+
+        else if (choice == 3 && square[3] == '3')
+            square[3] = mark;
+
+        else if (choice == 4 && square[4] == '4')
+            square[4] = mark;
+
+        else if (choice == 5 && square[5] == '5')
+            square[5] = mark;
+
+        else if (choice == 6 && square[6] == '6')
+            square[6] = mark;
+
+        else if (choice == 7 && square[7] == '7')
+            square[7] = mark;
+
+        else if (choice == 8 && square[8] == '8')
+            square[8] = mark;
+
+        else if (choice == 9 && square[9] == '9')
+            square[9] = mark;
+
+        else
+        {
+            printf("Invalid move ");
+
+            player--;
+            getch();
+        }
+        i = checkwin();
+
+        player++;
+    } while (i == -1);
+
+    board();
+
+    if (i == 1)
+    {
+        printf("==>\aPlayer %d win ", --player);
+        if (player == 1)
+        {
+            strcpy(result, "Player 1 won");
+        }
+        else if (player == 0)
+        {
+            strcpy(result, "Player 2 won");
+        }
+    }
+    else
+    {
+        printf("==>\aGame draw");
+        strcpy(result, "Draw");
+    }
+    FILE *ptr;
+    ptr = fopen("Result.txt", "a");
+    fputs(result, ptr);
+    fputs("\n", ptr);
+    fclose(ptr);
+    getch();
+
+    return 0;
+}
+
+/***************
+
+FUNCTION TO RETURN GAME STATUS
+1 FOR GAME IS OVER WITH RESULT
+-1 FOR GAME IS IN PROGRESS
+O GAME IS OVER AND NO RESULT
+ ****************/
+
+int checkwin()
+{
+    if (square[1] == square[2] && square[2] == square[3])
+        return 1;
+
+    else if (square[4] == square[5] && square[5] == square[6])
+        return 1;
+
+    else if (square[7] == square[8] && square[8] == square[9])
+        return 1;
+
+    else if (square[1] == square[4] && square[4] == square[7])
+        return 1;
+
+    else if (square[2] == square[5] && square[5] == square[8])
+        return 1;
+
+    else if (square[3] == square[6] && square[6] == square[9])
+        return 1;
+
+    else if (square[1] == square[5] && square[5] == square[9])
+        return 1;
+
+    else if (square[3] == square[5] && square[5] == square[7])
+        return 1;
+
+    else if (square[1] != '1' && square[2] != '2' && square[3] != '3' &&
+             square[4] != '4' && square[5] != '5' && square[6] != '6' && square[7] != '7' && square[8] != '8' && square[9] != '9')
+
+        return 0;
+    else
+        return -1;
+}
+
+/***********************
+FUNCTION TO DRAW BOARD OF TIC TAC TOE WITH PLAYERS MARK
+ ************************/
+
+void board()
+{
+    system("cls");
+    printf("\n\n\tTic Tac Toe\n\n");
+
+    printf("Player 1 (X)  -  Player 2 (O)\n\n\n");
+
+    printf("      |      |     \n");
+    printf("  %c   |  %c   |  %c \n", square[1], square[2], square[3]);
+    printf("______|______|_____\n");
+    printf("      |      |     \n");
+    printf("  %c   |  %c   |  %c \n", square[4], square[5], square[6]);
+    printf("______|______|_____\n");
+    printf("      |      |     \n");
+    printf("  %c   |  %c   |  %c \n", square[7], square[8], square[9]);
+    printf("      |      |     \n\n");
+}

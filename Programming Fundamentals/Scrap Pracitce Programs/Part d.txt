@@ -1,0 +1,20 @@
+void Age_greater_than_30(struct Employee *ptr)
+{
+    FILE *fp;
+    fp = fopen("K200183.txt", "r");
+    if (fp == NULL)
+    {
+        printf("File couldnot be opened\n");
+    }
+    printf("\nThe list of employees who work in department X and whose age is greater than 30\n\n\n");
+    for (i = 0; fread(ptr, sizeof(*ptr), 1, fp) > 0; i++)
+    {
+        if (ptr->depart.depart_id == 'X' && ptr->age > 30)
+        {
+
+            printf("The name of the Employee %d is %s.\nHis employe ID is %d.\nHis salary is %d.\nHis age is %d.\nHis depart id is %c.\nHis depart name is %s.\n\n\n", i + 1, ptr->Emp_name, ptr->Emp_id, ptr->salary, ptr->age, ptr->depart.depart_id, ptr->depart.depart_name);
+        }
+    }
+    fclose(fp);
+    main();
+}

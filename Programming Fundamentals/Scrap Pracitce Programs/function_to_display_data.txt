@@ -1,0 +1,14 @@
+void Display_data(struct Employee *ptr)
+{
+    FILE *fp;
+    fp = fopen("K200183.txt", "r");
+    if (fp == NULL)
+    {
+        printf("FIle couldnot be opened\n");
+    }
+    printf("\nThe data that you entered in the file is as follows\n");
+    for (i = 0; fread(ptr, sizeof(*ptr), 1, fp) > 0; i++)
+    {
+        printf("The name of the Employee %d is %s.\nHis employe ID is %d.\nHis salary is %d.\nHis age is %d.\nHis depart id is %c.\nHis depart name is %s.\n\n\n", i + 1, ptr->Emp_name, ptr->Emp_id, ptr->salary, ptr->age, ptr->depart.depart_id, ptr->depart.depart_name);
+    }
+}
