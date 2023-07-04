@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ICT assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <h2 class="heading">Personal Deatils</h2>
+        </div>
+        <div class="element">
+            <label for="name">Name</label> <input type="text" id="name">
+        </div>
+        <br>
+        <div class="element">
+            <label for="Password"> Password</label> <input type="text" id="Password">
+        </div>
+        <br>
+        <div class="element">
+            <label for="E-mail"> E-mail Id:</label> <input type="email" id="E-mail">
+        </div>
+        <br>
+        <div class="element">
+            Gender:
+            <label for="Male">Male</label> <input type="radio" id="Male" name="user_gender">
+            <label for="Female">Female</label> <input id="Female" type="radio" name="user_gender">
+        </div>
+        <br>
+        <div class="element">
+            <label for="Contact#">Contact#</label> <input type="text" id="Contact#">
+        </div>
+        <div>
+
+            <h2 class="heading">Educational Qualifications</h2>
+        </div>
+        <div class="element">
+            Degree <select>
+                <option>Bachelors</option>
+                <option>Masters</option>
+                <option>MPhil</option>
+                <option>PhD</option>
+            </select>
+        </div>
+        <br>
+        <div class="element">
+            <label for="field">Field</label>
+            <select id="field">
+                <option>Computer Science</option>
+                <option>Artificial Intelligence</option>
+                <option>Software Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Business Administration</option>
+            </select>
+        </div>
+        <br>
+        <div class="element">
+            Hobbies: <input type="radio" name="user hobbies" id="Playing Chess"> <label for="Playing Chess">Playing
+                Chess</label>
+            <input type="radio" name="user hobbies" id="Reading books">
+            <label for="Reading books">Reading books</label>
+        </div>
+        <h2 class="heading" id="Address"><label for="Address">Address</label> </h2>
+        <textarea cols="30" rows="5" name="Write you address here"></textarea>
+        <br><br>
+        <div class="element">
+
+            <label for="Attach Resume"> Attach Resume : </label><input type="file" id="Attach Resume">
+        </div>
+        <br>
+        <br>
+        <label>
+            <input type="submit" id="button" value="Submit"></label>
+    </form>
+</body>
+
+</html>

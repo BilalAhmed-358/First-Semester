@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\title{Practice}
+\author{Bilal Ahmed Khan}
+\date{19th January 2021}
+
+%\setlength{\parindent}{}
+\begin{document}
+\maketitle
+\begin{abstract}
+    This is an abstract. It contains \textbf{abstract information} about the text I have discussed in this document. 
+    
+    This document is basically made to keep a track record of things which I daily learn to do in latex :).
+\end{abstract}
+\textbf{Following is a motivational image.}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Desktop Background.png}
+    \caption{Motivational Pic}
+    \label{fig: motivational}
+\end{figure}
+%As it is shown in \ref(motivational)
+
+Holy shit how beautiful is this picture! \ref{fig: motivational}
+which is on page number \pageref{fig: motivational}
+
+Following are the things I hate about myself:
+\begin{itemize}
+\item I am lazy
+\item Somewhat over-confident also ;)
+\item Have respect issues
+\end{itemize}
+\newpage
+\noindent\textbf{This is an ordered list and these are the things I like about myself}
+\begin{enumerate}
+\item I am resilient
+\item I am stubborn (Yes I count it as an advantage)
+\item I try to speak truth
+\end{enumerate}
+
+Below is the renowned equation of \textit{Einstein}\[E=mc^2\]
+I have also written it in \textbf{\large BOLD}, \textit{\large ITALIC} and \underline{\large UNDERLINE} to emphasize the matter!.
+
+\textit{\textbf{\uline{Einstein introduced this equation to the world in His famous series of lectures given in Canterbury university}}}
+
+You can also write equations in a paragraph like this
+ \[2aS=vf^2-vi^2\]
+
+Or you can write them inline like this:
+
+Third equation of motion: \(2aS=v_f^2-v_i^2\)
+
+All three equations of motions are written below:
+
+\begin{align}
+    v_f =v_i+at\\
+    %S =v_i*t+1/2a*t^2\\
+    %2aS =v_f^2-v_i^2 
+\end{align}
+\newpage
+Below is my practice of paragraphs and sections
+\section{This is a section}
+\subsection{This is a subsection}
+\subsubsection{This is a subsubsection}
+\paragraph{This is a paragraph}
+\subparagraph{This is a subparagraph}
+
+\textbf{The heirarchy of Chapters and text is as follows:}
+\begin{enumerate}
+    \item Part
+    \item Chapter
+    \item Section
+    \item Subsection
+    \item Subsubsection
+    \item Paragraph
+    \item SubParagraph
+\end{enumerate}
+\textbf{P.S.} Part and chapter function only work in report and book classes and not in other so keep that in mind when using such options.
+
+\noindent{\large Now I'll practice making tables in LATEX.\\
+Following is my practice.}\\[\baselineskip]
+
+\noindent\textbf{This is the list of me and my university friends:}
+\begin{center}
+{\large \begin{tabular}{||c|c|c||}
+    \hline\hline
+   Student ID & Student Name & Roll No.\\\hline\hline
+    01 & Bilal Ahmed Khan & 0183\\\hline\hline
+    02 & Mohammad Wamiq Akram & 1857\\\hline\hline
+    03 & Zulnoor Siddiqui & 1090\\\hline\hline
+\end{tabular}}
+\end{center}
+\end{document}

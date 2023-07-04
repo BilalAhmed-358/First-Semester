@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{Champions Trophy 2017 FINAL Report}
+\author{Bilal Ahmed Khan }
+\date{January 2021}
+
+\begin{document}
+
+\maketitle
+\section{Squads of both teams}
+    \textbf{\large Pakistan} 
+    \begin{enumerate}
+     {\large\item Azhar Ali
+     \item Fakhar Zaman
+     \item Babar Azam
+     \item Shoaib Malik
+     \item Mohammad Hafeez
+     \item Imad Wasim
+     \item Safaraz Ahmed (C)(Wk)
+     \item Mohammad Amir
+     \item Shadab Khan
+     \item Hasam Ali
+     \item Junaid Khan}
+     \end{enumerate}
+     \begin{figure}[h!]
+         \centering
+         \includegraphics[width=0.35\textwidth]{Kohli and sarfraz.jpg}
+         \caption{Both Captians with the trophy}
+         \label{fig:my_label}
+     \end{figure}
+     \newpage
+     \textbf{\large India} 
+    \begin{enumerate}
+     {\large\item Rohit Sharma
+     \item Shikhar Dhawan
+     \item Virat Kohli
+     \item Yuvraj Singh
+     \item MS Dhoni (C)(Wk)
+     \item Kedar Jadhav
+     \item Hardik Pandya
+     \item Ravindra Jadeja
+     \item Ravichandaran Ashwin
+     \item Bhuvneswar Kumar
+     \item Jasprit Bumrah}
+     \end{enumerate} 
+
+\section{Top Performers}
+\subsection{Fakhar Zaman (114 runs of 106 balls)}
+Fakhar Zaman scored a blazing fast 114 runs of only 106 delivers and put Pakistan  in a winnig position.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{264580.13.jpg}
+    \caption{Fakhar Zaman Celebrating after his century}
+    \label{fig:my_label}
+\end{figure}
+\subsection{Mohammad Amir (3 wickets for 16 runs )}
+Mohammad Amir also supported Pakistani bowlers by getting rid of the three key batsmen of India i.e.
+\begin{enumerate}
+    \item Rohit Sharma
+    \item Virat Kohli
+    \item Shikar Dhawan
+\end{enumerate}
+ early in the innings.
+ 
+ \begin{figure}[h!]
+     \centering
+     \includegraphics[width=0.7\textwidth]{Amir and Kohli.jpg}
+     \caption{Mohammad Amir Celebrating after getting Kohli's wicket}
+     \label{fig:my_label}
+ \end{figure}
+ 
+\subsection{Hasan Ali (3 wickets for 19 runs )}
+ Hasan Ali also bowled a phenomnenal spell and got three wickets for 19 runs. He also assisted in the runout of Hardik Pandya who was the only sign of resistance in Indian team.
+ \begin{figure}[h!]
+     \centering
+     \includegraphics[width=0.6\textwidth]{Hasan.jpg}
+     \caption{Hasan Ali celebrating after winning the trophy}
+     \label{fig:my_label}
+ \end{figure}
+ 
+\section{Conclusion}
+The combination of all these performances from the young Pakistani teams put Pakistan in the driving seat in the game and the Indian team was bowled out for only 158 run in the 31st over.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width= 1\textwidth]{winning.jpg}
+    \caption{Pakistani team celebrating after winning the match}
+    \label{fig:my_label}
+\end{figure}
+\end{document}

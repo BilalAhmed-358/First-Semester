@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form for practice</title>
+	<link rel="stylesheet" href="modifications.css">
+</head>
+
+<body>
+
+	<h1 align="center">This  is a sign-up form</h1><br>
+
+	<form>
+		<div>
+			<label for="FirstName">First Name</label>  
+			<input type="text" name="FirstName" id="FirstName" required>
+		</div><br>
+		<div>
+			<label for="LastName">Last Name</label>  
+			<input type="text" name="LastName" id="LastName" required>
+		</div><br>
+		<div>
+			<label for="Email">Email</label>  
+			<input type="text" name="Email" id="Email" required>
+		</div><br>
+		<div>
+		Gender
+			<div>
+			<input type="radio" name="Gender" id="Male">
+			<label for="Male">Male</label>
+			</div>	
+			<div>
+			<input type="radio" name="Gender" id="Female">
+			<label for="Female">Female</label>
+			</div>
+		</div><br>
+		<div>
+			<label for="Qualification">Select your Qualification</label>
+			<select name="Qualification">
+				<option value="Bachelors">Bachelors</option>
+				<option value="Masters">Masters</option>
+				<option value="M.Phil">M.Phil</option>
+			</select>
+	
+		</div><br>
+		<div>
+		Are you married?
+			<div>
+			<input type="radio" name="MaritalStatus" id="Yes">
+			<label for="Yes">Yes</label>
+			</div>
+			<div>
+			<input type="radio" name="MaritalStatus" id="No">
+			<label for="No">No</label>
+			</div>
+		</div><br>
+		<div>
+			How many children Do you have?
+			<select value="children">
+				<option id="1" name="1">1</option>
+				<option id="2" name="2">2</option>
+				<option id="3" name="3">3</option>
+				<option id="More than 3" name="More than 3">More than 3</option>
+			</select>
+		</div><br>
+		<div>
+			<label>Enter you bio</label>
+			<textarea>Enter something about you</textarea>
+		</div><br>
+		<div>
+			<button type="submit">Submit</button><button type="reset">Reset</button>
+		</div>
+	</form>
+
+</body>
+
+</html>

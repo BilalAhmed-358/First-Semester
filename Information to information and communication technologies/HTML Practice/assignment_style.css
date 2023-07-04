@@ -1,0 +1,16 @@
+form {
+    text-align: center;
+    font-size: 150%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 200%;
+}
+
+body {
+    background-image: url("https://source.unsplash.com/s05XKB6jK2c");
+    background-position: center center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
